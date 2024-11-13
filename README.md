@@ -29,11 +29,11 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/<your-repo-name>.git
+   git clone https://github.com/nehalbk/correlation_analysis.git
 
 2. Navigate to the project directory:
     ```bash
-    cd <your-repo-name>
+    cd correlation_analysis
 
 3. Install dependencies:
     ```bash
