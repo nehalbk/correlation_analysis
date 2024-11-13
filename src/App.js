@@ -169,18 +169,17 @@ function App() {
       <h2>Correlation Analysis</h2>
       <div className="info">
         Click anywhere on the canvas to place markers at specific coordinates. 
-        You can remove a marker by clicking on it again.<br/> Once two or more points are placed, 
-        a linear regression line will automatically fit the points. <br/> 
+        You can remove a marker by clicking on it again.<br/>
         The key stats such as slope, 
         intercept, mean, and correlation coefficient are displayed. 
         <br/>To clear all points and reset the canvas, click the "Reset" button.
       </div>
 
       <div className="stats">
-        <p><font color="black" size="3"> Slope: <br></br></font> <b><font color="black" size="4.5"> {slope !== null ? slope.toFixed(2) : "N/A"} </font> </b></p>
-        <p><font color="black" size="3">Intercept: <br></br></font><b> <font color="black" size="4.5"> {intercept !== null ? intercept.toFixed(2) : "N/A"}</font></b> </p>
-        <p><font color="black" size="3">Correlation Coefficient: <br></br></font><b> <font color={coeffcol} size="4.5"> {coeffr !== null ? coeffr.toFixed(2) : "N/A"}</font> </b></p>
-        <p><font color="black" size="3">Mean: <br></br></font> <b><font color="black" size="4.5"> {mean !== null ? mean : "N/A"}</font></b> </p>
+        <p><font color="black" size="2.5"> Slope: <br></br></font> <b><font color="black" size="3"> {slope !== null ? slope.toFixed(2) : "N/A"} </font> </b></p>
+        <p><font color="black" size="2.5">Intercept: <br></br></font><b> <font color="black" size="3"> {intercept !== null ? intercept.toFixed(2) : "N/A"}</font></b> </p>
+        <p><font color="black" size="2.5">Correlation Coefficient: <br></br></font><b> <font color={coeffcol} size="3"> {coeffr !== null ? coeffr.toFixed(2) : "N/A"}</font> </b></p>
+        <p><font color="black" size="2.5">Mean: <br></br></font> <b><font color="black" size="3"> {mean !== null ? mean : "N/A"}</font></b> </p>
       </div>
       <canvas
         ref={canvasRef}
